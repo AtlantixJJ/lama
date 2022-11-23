@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import glob
-import os
+import os, sys
 import shutil
 import traceback
+
+sys.path.insert(0, ".")
 
 import PIL.Image as Image
 import numpy as np
@@ -90,7 +92,7 @@ def process_images(src_images, indir, outdir, config):
                 cur_basename = mask_basename + f'_crop{i:03d}'
                 Image.fromarray(np.clip(cur_mask * 255, 0, 255).astype('uint8'),
                                 mode='L').save(cur_basename + f'_mask{i:03d}.png')
-                cur_image.save(cur_basename + '.png')
+                #cur_image.save(cur_basename + '.png')
         except KeyboardInterrupt:
             return
         except Exception as ex:

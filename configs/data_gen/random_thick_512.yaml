@@ -20,9 +20,9 @@ mask_generator_kwargs:
   segm_proba: 0
   squares_proba: 0
 
-  variants_n: 5
+  variants_n: 50
 
-max_masks_per_image: 1
+max_masks_per_image: 10
 
 cropping:
   out_min_size: 512

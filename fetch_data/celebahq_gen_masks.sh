@@ -1,4 +1,10 @@
 python3 bin/gen_mask_dataset.py \
+    $(pwd)/configs/data_gen/random_thick_512.yaml \
+    ../../data/celebahq/export/0000/train_image \
+    ../../data/celebahq/export/0000/train_image_mask --ext png
+
+
+python3 bin/gen_mask_dataset.py \
 $(pwd)/configs/data_gen/random_thick_256.yaml \
 celeba-hq-dataset/val_source_256/ \
 celeba-hq-dataset/val_256/random_thick_256/
