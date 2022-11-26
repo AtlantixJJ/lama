@@ -1,7 +1,7 @@
 python3 bin/gen_mask_dataset.py \
     $(pwd)/configs/data_gen/random_thick_512.yaml \
-    ../../data/celebahq/export/0000/train_image \
-    ../../data/celebahq/export/0000/train_image_mask --ext png
+    ../../data/celebahq/image \
+    ../../data/celebahq/mask --ext jpg
 
 
 python3 bin/gen_mask_dataset.py \

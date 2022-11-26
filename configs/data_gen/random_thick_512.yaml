@@ -20,7 +20,7 @@ mask_generator_kwargs:
   segm_proba: 0
   squares_proba: 0
 
-  variants_n: 50
+  variants_n: 5
 
 max_masks_per_image: 10
 
